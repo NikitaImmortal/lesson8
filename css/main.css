@@ -96,23 +96,24 @@ li {
    
 }
 
-.header:after {
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu:after   {
     content: "";
     border-bottom: 1px solid #828282;
     width: 941px;
     position: absolute;
-    margin-top: 32px;
-}
-
-.header__menu {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 49px;
 }
 
 .header__menu-home a {
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
+    color:#070707;
    
 }
 
@@ -126,7 +127,7 @@ li {
 
 /* FIRST-section */
 .first-section{
-    padding:36px 0 105px;
+    padding:36px 0 52px;
 
 }
 .first{
@@ -167,6 +168,7 @@ li {
 .first__languages-eng a{
     font-weight: 700;
     /* font-size:16px; */
+    color: #000000;
 
 }
 
@@ -182,4 +184,37 @@ li {
 
 .first__img {
 
+}
+
+
+/* about me section */
+
+
+.about__me-section{
+    background: #F6F6F6;
+    padding: 52px 0 46px;
+
+}
+.about__me{
+    text-align: center;
+    width: 485px;
+
+}
+.about__me-title{
+    font-size:34px;
+    margin-bottom: 18px;
+
+}             
+.about__me-text{
+    width: 485px;
+
+}
+
+.about__me-text > :not(:last-child) {
+    padding-bottom: 46px;
+
+}
+
+.about__me-text p {
+  font-size: 18px;
 }
