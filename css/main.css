@@ -24,7 +24,6 @@ body {
     color: #000000;
     padding: 0;
     margin: 0;
-
 }
 
 .container {
@@ -45,8 +44,9 @@ a {
 
 p {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
+
 }
 
 h1,
@@ -90,6 +90,7 @@ li {
 
 .header-section {
     padding: 32px 0 36px;
+    position: relative;
 }
 
 .header {
@@ -106,7 +107,7 @@ li {
     border-bottom: 1px solid #828282;
     width: 941px;
     position: absolute;
-    margin-top: 49px;
+    bottom:0;
 }
 
 .header__menu-home a {
@@ -126,29 +127,29 @@ li {
 }
 
 /* FIRST-section */
-.first-section{
+.foreword-section{
     padding:36px 0 52px;
 
 }
-.first{
+.foreword{
     display:flex;
     justify-content: space-between;
     margin-bottom: 31px;
     align-items: center;
 
 }
-.first__name{
+.foreword__name{
     font-size:47px;
     max-width:150px;
     width:100%;
 }
-.first__bio{
+.foreword__bio{
     width:155px;
     padding-top: 35px;
     padding-right: 80px;
 
 }
-.first__languages{
+.foreword__languages  {
     writing-mode: vertical-rl;
     text-transform: uppercase;
     font-size:16px;
@@ -159,30 +160,33 @@ li {
 
 }
 
-.first__languages-ru a{
+.languages__ru a{
     font-weight: 700;
     color: #828282;  
     
 
 }
-.first__languages-eng a{
+.languages__eng a{
     font-weight: 700;
-    /* font-size:16px; */
     color: #000000;
 
 }
 
-.first__languages-eng a::before {
+.languages__eng a:before {
     content: "";
     border-bottom: 3px solid #000000;
     margin-bottom: 5px;
     margin-top: 5px;
     position: relative;
     right: 3px;
+    width: 10px;
     
 }
 
-.first__img {
+.foreword__img {
+    width: 100%;
+    display: block;
+
 
 }
 
@@ -190,31 +194,130 @@ li {
 /* about me section */
 
 
-.about__me-section{
+.about-me-section{
     background: #F6F6F6;
     padding: 52px 0 46px;
 
 }
-.about__me{
+.about-me{
     text-align: center;
     width: 485px;
+    margin-inline: auto;
+
+   
 
 }
-.about__me-title{
+.about-me__title{
     font-size:34px;
     margin-bottom: 18px;
 
 }             
-.about__me-text{
-    width: 485px;
+.about-me__text{
+    
 
 }
 
-.about__me-text > :not(:last-child) {
+.about-me__text > :not(:last-child) {
     padding-bottom: 46px;
 
 }
 
-.about__me-text p {
+.about-me__text p {
   font-size: 18px;
 }
+
+
+
+/* skill SECTION */
+
+.skills-section{
+    padding: 91px 0 110px;
+}
+.skills{
+    text-align: center;
+    width: 937px;
+    
+}
+
+.skills_title{
+    font-size: 34px;
+    margin-bottom: 69px
+}
+.skills__text{
+    margin-bottom: 83px;
+    
+}
+
+.skills__text p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.skills__icons{
+    display: flex;
+    justify-content: space-around;
+}
+    
+
+.skills__icon{
+    
+}
+.skills__icon-image-ps{
+    background: linear-gradient(135deg, rgba(3,68,100,1) 0%, rgba(12,8,36,1) 100%);
+    /* margin-bottom: 23px; */
+    
+    
+}
+.skills__icon-text{
+    
+}
+
+.skills__icon-text p{
+    font-size: 14px;
+    font-weight: 700;
+    color:#828282;
+    margin-top: 23px;
+
+}
+
+.skills__icon-image-stars{
+    
+}
+.skills__icon-image-star-on-ps{
+   
+   
+    
+}
+.skills__icon-image-star-off-ps{
+    
+}
+.skills__icon-image-ai{
+    background: radial-gradient(ellipse at center, rgba(66, 51, 37, 0.98) 85%, rgba(1,192,160,1) 100%);
+    /* margin-bottom: 23px; */
+}
+.skills__icon-image-star-on-ai{
+    
+}
+.skills__icon-image-star-off-ai{
+    
+}
+.skills__icon-image-ae{
+    background:radial-gradient(ellipse at center, rgba(4,64,245,1) -64%, rgba(1,32,2,1) 131%) ;
+    /* margin-bottom: 23px; */
+}
+.skills__icon-image-star-on-ae{
+    
+}
+.skills__icon-image-star-off-ae{
+    
+}
+.skills__icon-image-figma{
+    /* margin-bottom: 23px; */
+    
+}
+.skills__icon-image-star-on-figma{
+    
+}
+.skills__icon-image-star-off-figma{
+    
+}
+        
