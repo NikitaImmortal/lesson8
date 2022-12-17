@@ -379,6 +379,7 @@ li {
     background: #070707;
     color: #fff;
     margin-bottom: 85px;
+    cursor: pointer;
 }
 
 .footer__icons {
