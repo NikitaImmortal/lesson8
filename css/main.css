@@ -392,18 +392,34 @@ li {
 
 .footer__icon {}
 
+.footer__social-media{
+    display: flex;
+    gap: 0.5em;
+    margin-left: 46px;
+}
+
+.footer__social-media a {
+    color: #828282;
+    margin-inline: auto;
+}
+
 .footer__text-two {
     color: #828282;
     margin-inline: auto;
+   
+}
+
+.footer__social-media-link {
+    font-size: 14px;
 }
 
 .text {}
 
 /* FOOTER SECTION */
 
-footer
-аooter-section
-footer__title
-footer__text-one
-footer__button
-                
+.Footer-section 
+.Footer 
+.Footer__title 
+.Footer__text-one 
+.Footer__button 
+              
