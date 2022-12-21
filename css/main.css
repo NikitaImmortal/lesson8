@@ -19,6 +19,11 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 body {
     font-family: Gilroy, Arial, sans-serif;
@@ -117,29 +122,39 @@ li {
     font-style: normal;
     font-size: 18px;
     color: #070707;
-
 }
+
+.header__menu-home a:hover {
+    color: #828282;
+    transition: 0.7s;
+}
+
 
 .header__menu-navig a {
     color: #828282;
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
+}
 
+.header__menu-navig a:hover {
+    color: #070707;
+    transition: 0.7s;
 }
 
 /* foreword-section */
 .foreword-section {
     padding: 36px 0 95px;
-
 }
 
 .foreword {
+    align-items: center;
+}
+
+.foreword__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 31px;
-    align-items: center;
-
 }
 
 .foreword__name {
@@ -152,48 +167,13 @@ li {
     width: 155px;
     padding-top: 35px;
     padding-right: 80px;
-
 }
 
-.foreword__languages {
-    writing-mode: vertical-rl;
-    text-transform: uppercase;
-    font-size: 16px;
-    display: flex;
-    transform: rotate(180deg);
-    padding-bottom: 25px;
-
-
-}
-
-.languages__ru a {
-    font-weight: 700;
-    color: #828282;
-
-
-}
-
-.languages__eng a {
-    font-weight: 700;
-
-}
-
-.languages__eng a:before {
-    content: "";
-    border-bottom: 3px solid #000000;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    position: relative;
-    right: 3px;
-    width: 10px;
-
-}
+.foreword__languages {}
 
 .foreword__img {
     width: 100%;
     display: block;
-
-
 }
 
 
@@ -203,35 +183,27 @@ li {
 .about-me-section {
     background: #F6F6F6;
     padding: 120px 0 107px;
-
 }
 
 .about-me {
     text-align: center;
     width: 485px;
     margin-inline: auto;
-
-
-
 }
 
 .about-me__title {
     margin-bottom: 18px;
-
 }
 
 .about-me__text {}
 
 .about-me__text> :not(:last-child) {
     padding-bottom: 46px;
-
 }
 
 .about-me__text p {
     font-size: 18px;
 }
-
-
 
 /* skill SECTION */
 
@@ -242,18 +214,14 @@ li {
 .skills {
     text-align: center;
     width: 937px;
-
 }
 
-.skills_title {
+.skills__title {
     margin-bottom: 69px
 }
 
 .skills__text {
     margin-bottom: 83px;
-}
-
-.skills__text p {
     font-size: 18px;
     font-weight: 500;
 }
@@ -271,7 +239,6 @@ li {
 
 .skills__icon-text {
     margin-bottom: 41px;
-
 }
 
 .skills__icon-text p {
@@ -279,7 +246,6 @@ li {
     font-weight: 700;
     color: #828282;
     margin-top: 23px;
-
 }
 
 .skills__icon-image-stars {
@@ -318,12 +284,10 @@ li {
 
 .portfolio {
     text-align: center;
-
 }
 
 .portfolio__title {
     margin-bottom: 47px;
-
 }
 
 .portfolio__images {}
@@ -371,11 +335,11 @@ li {
     font-family: 'Gilroy';
     font-weight: 700;
     font-size: 18px;
-    max-width: 180px;
+    max-width: 182px;
     width: 100%;
     border: 1px solid #fff;
     border-radius: 27px;
-    padding: 13px 0 7px;
+    padding: 13px 30px 7px 28px;
     background: #070707;
     color: #fff;
     margin-bottom: 85px;
@@ -386,13 +350,11 @@ li {
     margin-bottom: 46px;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .footer__icon {}
 
-.footer__social-media{
+.footer__social-media {
     display: flex;
     gap: 0.5em;
     margin-left: 46px;
@@ -406,7 +368,7 @@ li {
 .footer__text-two {
     color: #828282;
     margin-inline: auto;
-   
+
 }
 
 .footer__social-media-link {
@@ -416,10 +378,3 @@ li {
 .text {}
 
 /* FOOTER SECTION */
-
-.Footer-section 
-.Footer 
-.Footer__title 
-.Footer__text-one 
-.Footer__button 
-              

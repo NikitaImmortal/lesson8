@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Урок 8</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/languages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- header.header-section>.container>.header -->
     <header class="header-section">
         <div class="container">
             <div class="header">
@@ -22,22 +22,22 @@
                             </a>
                         </li>
                         <li class="header__menu-navig">
-                            <a href="">
+                            <a href="#about-me-section">
                                 Обо мне
                             </a>
                         </li>
                         <li class="header__menu-navig">
-                            <a href="">
+                            <a href="#skills-section">
                                 Навыки
                             </a>
                         </li>
                         <li class="header__menu-navig">
-                            <a href="">
+                            <a href="#portfolio-section">
                                 Портфолио
                             </a>
                         </li>
                         <li class="header__menu-navig">
-                            <a href="">
+                            <a href="#contacts">
                                 Контакты
                             </a>
                         </li>
@@ -47,35 +47,35 @@
         </div>
     </header>
 
-    <!-- section.offer-section>.container>.offer -->
-    <section class="foreword-section">
+    <section id="foreword-section" class="foreword-section">
         <div class="container">
             <div class="foreword">
-                <h1 class="foreword__name">
-                    Петер Никсон
-                </h1>
-                <h3 class="foreword__bio">
-                    UX | UI дизайнер 24 года, Берлин
-                </h3>
-                <ul class="foreword__languages languages">
-                    <li class="languages__ru">
-                        <a href="/rus.html">
-                            Ru
-                        </a>
-                    </li>
-                    <li class="languages__eng">
-                        <a href="/index.html">
-                            Eng
-                        </a>
-                    </li>
-                </ul>
+                <div class="foreword__header">
+                    <h1 class="foreword__name">
+                        Петер Никсон
+                    </h1>
+                    <h3 class="foreword__bio">
+                        UX | UI дизайнер 24 года, Берлин
+                    </h3>
+                    <ul class="foreword__languages languages">
+                        <li class="languages__language languages__ru gray-eng">
+                            <a href="rus.html">
+                                Ru
+                            </a>
+                        </li>
+                        <li class="languages__language languages__eng black-ru">
+                            <a href="index.html">
+                                Eng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="img/peter.png" alt="Peter Person" class="foreword__img">
             </div>
-            <img src="img/121123441peter.png" alt="Peter Person" class="first__img">
         </div>
     </section>
 
-    <!-- section.offer-section>.container>.offer -->
-    <section class="about-me-section">
+    <section id="about-me-section" class="about-me-section">
         <div class="container">
             <div class="about-me">
                 <h2 class="about-me__title">
@@ -83,23 +83,20 @@
                 </h2>
                 <div class="about-me__text">
                     <p>
-                        Привет, Я Петер – UX/UI дизайнер из Минска.
-                        Интересуюсь дизайном и всем что с этим связано.
+                        Привет, Я Петер – UX/UI дизайнер из Минска. Интересуюсь дизайном и всем что с этим связано.
                     </p>
                     <p>
                         Я учусь на курсах "Веб и мобильный дизайн интерфейсов" в IT-Академии.
                     </p>
                     <p>
-                        Готовы реализовать отличные проекты
-                        с замечательными людьми.
+                        Готовы реализовать отличные проекты с замечательными людьми.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- section.offer-section>.container>.offer -->
-    <section class="skills-section">
+    <section id="skills-section" class="skills-section">
         <div class="container">
             <div class="skills">
                 <h2 class="skills_title">
@@ -112,7 +109,7 @@
                 </div>
                 <ul class="skills__icons">
                     <li class="skills__icon">
-                        <img src="img/VectorPS.png" alt="Photoshop" class="skills__icon-image-ps">
+                        <img src="img/stars-ps.png" alt="Photoshop" class="skills__icon-image-ps">
                         <div class="skills__icon-text">
                             <p>
                                 Adobe Photoshop
@@ -124,15 +121,13 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-
                         </div>
                     </li>
                     <li class="skills__icon">
-                        <img src="img/VectorAi.png" alt="Photoshop" class="skills__icon-image-ai">
+                        <img src="img/stars-ai.png" alt="Illustrator" class="skills__icon-image-ai">
                         <div class="skills__icon-text">
                             <p>
-                                Adobe
-                                Illustrator
+                                Adobe Illustrator
                             </p>
                         </div>
                         <div class="skills__icon-image-stars">
@@ -141,15 +136,13 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-
                         </div>
                     </li>
                     <li class="skills__icon">
-                        <img src="img/VectorAe.png" alt="Photoshop" class="skills__icon-image-ae">
+                        <img src="img/stars-ae.png" alt="After-Effects" class="skills__icon-image-ae">
                         <div class="skills__icon-text">
                             <p>
-                                Adobe
-                                After Effects
+                                Adobe After Effects
                             </p>
                         </div>
                         <div class="skills__icon-image-stars">
@@ -158,11 +151,10 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-
                         </div>
                     </li>
                     <li class="skills__icon">
-                        <img src="img/Figmabubles.png" alt="Photoshop" class="skills__icon-image-figma">
+                        <img src="img/Figmabubles.png" alt="Figma" class="skills__icon-image-figma">
                         <div class="skills__icon-text">
                             <p>
                                 Figma
@@ -174,7 +166,6 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-
                         </div>
                     </li>
                 </ul>
@@ -182,9 +173,7 @@
         </div>
     </section>
 
-    <!-- section.offer-section>.container>.offer -->
-
-    <section class="portfolio-section">
+    <section id="portfolio-section" class="portfolio-section">
         <div class="container">
             <div class="portfolio">
                 <h2 class="portfolio__title">
@@ -192,19 +181,19 @@
                 </h2>
                 <ul class="portfolio__images">
                     <li class="portfolio__image">
-                        <img src="img/Слой 8port1.png" alt="" class="portfolio__image-photo">
+                        <img src="img/woman-portfolio.png" alt="" class="portfolio__image-photo">
                         <a href="">
                             Интернет-магазин модной одежды - Домашняя страница
                         </a>
                     </li>
                     <li class="portfolio__image">
-                        <img src="img/reebok_webport2.png" alt="" class="portfolio__image-photo photo">
+                        <img src="img/portfolio-reebok.png" alt="" class="portfolio__image-photo photo">
                         <a href="">
                             Магазин Reebok - Концепция
                         </a>
                     </li>
                     <li class="portfolio__image">
-                        <img src="img/reebok_webport3.png" alt="" class="portfolio__image-photo photo">
+                        <img src="img/portfolio-braun.png" alt="" class="portfolio__image-photo photo">
                         <a href="">                          
                             Целевая страница Braun - Концепция
                         </a>
@@ -214,45 +203,66 @@
         </div>
     </section>
 
-    <!-- footer.footer-section>.container>.footer -->
-
-    <footer class="footer-section">
+    <footer id="contacts" class="footer-section">
         <div class="container">
             <div class="footer">
                 <h2 class="footer__title">
                     Контакты
                 </h2>
                 <p class="footer__text-one">
-                    Хотите узнать больше или просто поболтать?
-                    Всегда пожалуйста!
+                    Хотите узнать больше или просто поболтать? Всегда пожалуйста!
                 </p>
                 <button class="footer__button">
                     Отправить сообщение
                 </button>
                 <ul class="footer__icons">
                     <li class="footer__icon">
-                        <img src="img/In.png" alt="" class="footer__icon-img">
+                        <a href="">
+                            <img src="img/inn.png" alt="" class="footer__icon-img">    
+                        </a>
                     </li>
                     <li class="footer__icon">
-                        <img src="img/inst.png" alt="" class="footer__icon-img">
+                        <a href="">
+                            <img src="img/inst.png" alt="" class="footer__icon-img">
+                        </a>
                     </li>
                     <li class="footer__icon">
-                        <img src="img/be.png" alt="" class="footer__icon-img">
+                        <a href="">
+                            <img src="img/bee.png" alt="" class="footer__icon-img">
+                        </a>
                     </li>
                     <li class="footer__icon">
-                        <img src="img/Vectorball.png" alt="" class="footer__icon-img">
+                        <a href="">
+                            <img src="img/Vectorball.png" alt="" class="footer__icon-img">
+                        </a>
                     </li>
                 </ul>
                 <p class="footer__text-two text">
-                    Мои соц. сети
+                    Like me on
                 </p>
-                <p class="footer__text-two ">
-                    LinkedIn, Instagram, Behance, Dribble
-                </p>
+                <ul class="footer__social-media">
+                    <li class="footer__social-media-link">
+                        <a href="">
+                            LinkedIn,
+                        </a>
+                    </li>
+                    <li class="footer__social-media-link">
+                        <a href="">
+                            Instagram,      
+                        </a>
+                    </li>
+                    <li class="footer__social-media-link">
+                        <a href="">
+                            Behance,
+                        </a>
+                    </li>
+                    <li class="footer__social-media-link">
+                        <a href="">
+                            Dribble
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
-
-
-
 </body>

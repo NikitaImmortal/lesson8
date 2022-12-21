@@ -1,0 +1,44 @@
+.languages {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    transform: rotate(180deg);
+    padding-bottom: 25px;
+}
+
+.languages__language {}
+
+.languages__language a {
+    font-weight: 700;
+}
+
+.languages__language a:before {
+    content: "";
+    border-bottom: 3px solid #000000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
+    right: 3px;
+    width: 10px;
+}
+
+.languages__language .active {
+    color: #828282;
+}
+
+.languages__ru a:before {
+    content: none;
+}
+
+.languages__ru a:active {
+    color: #828282;
+}
+
+.black-ru a {
+    color: black;
+}
+
+.gray-eng a {
+    color: #828282;
+}
