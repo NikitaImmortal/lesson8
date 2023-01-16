@@ -21,6 +21,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -30,6 +31,7 @@ body {
     color: #000000;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -178,7 +180,6 @@ li {
 
 
 /* about me section */
-
 
 .about-me-section {
     background: #F6F6F6;
@@ -377,4 +378,141 @@ li {
 
 .text {}
 
-/* FOOTER SECTION */
+       /* MEDIA QUERiES */
+   
+/* 992-1200 */
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+    .header__menu:after {
+        width: 91%;
+    }
+    .about-me-section {
+        padding: 85px 0 107px;
+    }
+    .skills-section {
+        padding: 86px 0 86px;
+    }
+    .skills {
+        width:100%;
+        text-align: center;
+    }
+    .skills__icon-image-ps {
+        width: 50%;
+
+    }
+    .skills__icon-image-ai {
+        width: 50%;
+
+    }
+    .skills__icon-image-ae {
+        width: 50%;
+    }
+    .skills__icon-image-figma {
+        width: 33%;
+    }
+    .skills__icon-image-stars {
+        font-size: 20px;
+    }
+    .portfolio-section {
+        padding: 56px 0 77px;
+    }
+    .portfolio__image-photo {
+        width:100%;
+    }
+                               
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 520px;
+    }
+    .header__menu:after {
+        width: 90%;
+    }
+    .skills__text {
+        margin-bottom: 51px;
+    }
+    .skills__icons {
+        flex-direction: column;
+    }
+    .skills__icon {
+        width:100%;
+    }
+    .skills__icon-image-ps {
+        width: 30%;
+
+    }
+    .skills__icon-image-ai {
+        width: 30%;
+
+    }
+    .skills__icon-image-ae {
+        width: 30%;
+    }
+    .skills__icon-image-figma {
+        width: 15%;
+    }
+    .skills__icon-image-stars {
+        width:100%;
+    }
+    .skills__icon-text {
+        margin-bottom: 6px;
+    } 
+    .skills__icon-image-stars {
+        margin-bottom: 29px;
+    }
+    .skills__icon-text p {
+        margin-top: 6px;
+    }
+   
+}
+
+/* 320-576 */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header__menu-home a {
+        font-size: 14px;
+    }
+    .header__menu-navig a {
+        font-size: 14px;
+    }
+    .foreword-section {
+        padding: 50px 0 50px;
+    }
+    .foreword__name {
+        font-size: 35px;
+    }
+    .foreword__header {
+        flex-flow: wrap;
+    }
+    .about-me-section {
+        padding: 50px 0 50px;
+    }
+    .about-me {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .footer__social-media {
+        margin-left: 20px;
+    }
+    .about-me__text p {
+        font-size: 14px;
+    }
+    .skills-section {
+        padding: 50px 0 50px;
+    }
+    
+}
